@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        char array[] = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println ("Please Enter the Number: "); // input number from user
+        int num = input.nextInt();
+        if(num>0 && num <27)
+        {
+            System.out.println(array[num-1]);
+        }
+        else
+        {
+            System.out.println("invalid");
+        }
+        input.close();
+
+    }
+}
